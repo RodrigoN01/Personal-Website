@@ -5,11 +5,166 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to my website!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/81d5f6c52d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <header>
+    <div class="logo">
+      <img src="./img/logo.png" alt="logo-image">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">My Services</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#work" class="nav-link">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Introduction -->
+
+  <section class="intro" id="home">
+    <h1 class="section-title section-title-intro">
+      Hi, I am <strong>Rodrigo Novaes</strong>
+    </h1>
+    <p class="section-subtitle section-subtitle-intro">FRONT-END DEVELOPER</p>
+    <img src="./img/ProfilePic.JPG" alt="a picture of Rodrigo Novaes" class="intro-img">
+  </section>
+
+  <!-- My Services -->
+
+  <section class="my-services" id="services">
+    <h2 class="section-title section-title-services">What I do</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Web Development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione, nisi doloremque eius perspiciatis
+          corporis aperiam nam labore, amet, soluta dolore totam sed. Cum, repellat voluptate ad nisi, molestias
+          suscipit beatae enim sint ratione voluptatem dignissimos possimus ipsum asperiores molestiae?</p>
+      </div>
+
+      <div class="service">
+        <h3>SEO</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorum odio, impedit, mollitia fuga cum
+          assumenda soluta accusamus rem quos ratione aliquam aperiam dicta! Quasi, in minima! Aspernatur odio, quia
+          totam laudantium debitis quos amet eligendi, nesciunt saepe sequi accusamus.</p>
+      </div>
+
+      <div class="service">
+        <h3>Latest Tech</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat iste, temporibus officia aspernatur natus
+          ducimus excepturi incidunt illo tenetur facere nesciunt hic iusto? Alias quos odit, sed sit illum praesentium
+          fugit, deleniti commodi a natus ducimus, laborum aperiam! Consequuntur, vero.</p>
+      </div>
+    </div>
+
+    <a href="#work" class="btn">My Work</a>
+  </section>
+
+  <!-- About Me -->
+
+  <section class="about-me" id="about">
+    <h2 class="section-title section-title-about">Who I am</h2>
+    <p class="section-subtitle section-subtitle-about">Front-End Developer based out of Auckland, NZ</p>
+
+    <div class="about-me-body">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam nemo fuga, nostrum impedit voluptas ab
+        rem quisquam dignissimos assumenda neque voluptatem accusamus reiciendis accusantium cum nihil tempore
+        distinctio excepturi? Molestias vitae facere iusto beatae quaerat impedit optio fugiat ad?</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, voluptates ad. Maiores perferendis tempore
+        eligendi accusamus, quidem hic consequatur magni quis cupiditate nisi excepturi necessitatibus sed provident
+        quam. Totam, architecto ratione repellat incidunt beatae quos, distinctio velit voluptates mollitia est
+        repudiandae molestiae consequatur facilis dolores. Cumque quo esse ut assumenda!</p>
+    </div>
+
+    <img src="./img/Myself2.jpg" alt="Second image of Rodrigo" class="about-me-img">
+  </section>
+
+  <!-- My Work -->
+
+  <section class="my-work" id="work">
+    <h2 class="section-title section-title-work">My Work</h2>
+    <p class="section-subtitle section-subtitle-work">A selection of my range of work</p>
+
+    <div class="portfolio">
+      <!-- Portfolio item 01 -->
+      <a href="#" class="portfolio-item">
+        <img src="./img/portfolio-01.jpg" alt="" class="portfolio-img">
+      </a>
+      <!-- Portfolio item 02 -->
+      <a href="#" class="portfolio-item">
+        <img src="./img/portfolio-02.jpg" alt="" class="portfolio-img">
+      </a>
+      <!-- Portfolio item 03 -->
+      <a href="#" class="portfolio-item">
+        <img src="./img/portfolio-03.jpg" alt="" class="portfolio-img">
+      </a>
+      <!-- Portfolio item 04 -->
+      <a href="#" class="portfolio-item">
+        <img src="./img/portfolio-04.jpg" alt="" class="portfolio-img">
+      </a>
+      <!-- Portfolio item 05 -->
+      <a href="#" class="portfolio-item">
+        <img src="./img/portfolio-05.jpg" alt="" class="portfolio-img">
+      </a>
+      <!-- Portfolio item 06 -->
+      <a href="#" class="portfolio-item">
+        <img src="./img/portfolio-06.jpg" alt="" class="portfolio-img">
+      </a>
+      <!-- Portfolio item 07 -->
+      <a href="#" class="portfolio-item">
+        <img src="./img/portfolio-07.jpg" alt="" class="portfolio-img">
+      </a>
+      <!-- Portfolio item 08 -->
+      <a href="#" class="portfolio-item">
+        <img src="./img/portfolio-08.jpg" alt="" class="portfolio-img">
+      </a>
+      <!-- Portfolio item 09 -->
+      <a href="#" class="portfolio-item">
+        <img src="./img/portfolio-09.jpg" alt="" class="portfolio-img">
+      </a>
+      <!-- Portfolio item 10 -->
+      <a href="#" class="portfolio-item">
+        <img src="./img/portfolio-10.jpg" alt="" class="portfolio-img">
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:rod_novaes@hotmail.com" class="footer-link">rod_novaes@hotmail.com</a>
+    <ul class="social-list">
+      <li class="social-list-item">
+        <a class="social-list-link" href="https://codepen.io">
+          <i class="fab fa-codepen"></i>
+        </a>
+      </li>
+      <li class="social-list-item">
+        <a class="social-list-link" href="https://linkedin.com">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li class="social-list-item">
+        <a class="social-list-link" href="https://twitter.com">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="social-list-item">
+        <a class="social-list-link" href="https://github.com">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
 
 
   <script src="./js/app.js"></script>
