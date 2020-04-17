@@ -43,6 +43,10 @@
 
 /* General Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -141,8 +145,19 @@ header {
   padding: 1em;
 }
 
-.logo {
-  max-width: 200px;
+.logo-name {
+  font-size: 2.2rem;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  color: var(--clr-dark);
+  margin-left: 0.5em;
+}
+
+.logo-name i {
+  padding-left: 0.6rem;
+  font-size: 1.8rem;
+  color: var(--clr-accent);
 }
 
 .nav {
@@ -188,8 +203,28 @@ header {
   cursor: pointer;
   position: absolute;
   right: 2em;
-  top: 4em;
+  top: 3em;
   z-index: 1000;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
 }
 
 .hamburger {
@@ -200,8 +235,8 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-dark);
-  width: 3em;
+  background: var(--clr-accent);
+  width: 2em;
   height: 3px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
