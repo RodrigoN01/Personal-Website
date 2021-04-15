@@ -1,111 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rodrigo Novaes - Front-End Web Developer"
+    />
+    <meta property="og:title" content="Rodrigo's Personal Website" />
+    <meta property="og:description" content="Work and Personal Showcase" />
+    <meta property="og:image" content="./img/ProfilePic.JPG" />
+    <meta property="og:url" content="https://www.rodrigowebdev.com/" />
+    <title>Welcome to my website!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/04a154413f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Rodrigo Novaes - Front-End Web Developer">
-  <meta property="og:title" content="Rodrigo's Personal Website">
-  <meta property="og:description" content="Work and Personal Showcase">
-  <meta property="og:image" content="./img/ProfilePic.JPG">
-  <meta property="og:url" content="https://www.rodrigowebdev.com/">
-  <title>Welcome to my website!</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
-  <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,900|Source+Sans+Pro:300,900&display=swap"
-    rel="stylesheet">
-  <script src="https://kit.fontawesome.com/81d5f6c52d.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#" class="logo-name"
+          >RODRIGO<i class="fas fa-laptop-code"></i
+        ></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">My Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item"><a href="#work" class="nav-link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <div class="logo">
-      <a href="#" class="logo-name">RODRIGO<i class="fas fa-laptop-code"></i></a>
-    </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#services" class="nav-link">My Services</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
-        <li class="nav-item"><a href="#work" class="nav-link">My Work</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Introduction -->
 
-  <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section-title section-title-intro">
+        Hi, I am <strong>Rodrigo Novaes</strong>
+      </h1>
+      <p class="section-subtitle section-subtitle-intro">FRONT-END DEVELOPER</p>
+      <img
+        src="./img/ProfilePic.JPG"
+        alt="a picture of Rodrigo Novaes"
+        class="intro-img"
+      />
+    </section>
 
-  <section class="intro" id="home">
-    <h1 class="section-title section-title-intro">
-      Hi, I am <strong>Rodrigo Novaes</strong>
-    </h1>
-    <p class="section-subtitle section-subtitle-intro">FRONT-END DEVELOPER</p>
-    <img src="./img/ProfilePic.JPG" alt="a picture of Rodrigo Novaes" class="intro-img">
-  </section>
+    <!-- My Services -->
 
-  <!-- My Services -->
+    <section class="my-services" id="services">
+      <h2 class="section-title section-title-services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Web Development</h3>
+          <p>
+            Creating websites isn’t just my job, it’s also my passion. I build
+            creative websites to maximize your business and personal awareness
+            on the internet using the latest technologies.
+          </p>
+        </div>
 
-  <section class="my-services" id="services">
-    <h2 class="section-title section-title-services">What I do</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Web Development</h3>
-        <p>Creating websites isn’t just my job, it’s also my passion. I build creative websites to maximize your
-          business and personal awareness on the internet using the latest technologies. </p>
+        <div class="service">
+          <h3>Responsive Web Design</h3>
+          <p>
+            Responsive web design is a web design approach that allows websites
+            and pages to display on all devices and screen sizes by
+            automatically adapting to the screen, whether it's a desktop,
+            laptop, tablet, or smartphone.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>SEO</h3>
+          <p>
+            Improve your rankings in Google with Managed SEO. Optimise your
+            website by conducting an SEO website audit, researching keywords
+            which are important to your market sector and bring in targeted
+            search volume.
+          </p>
+        </div>
       </div>
 
-      <div class="service">
-        <h3>Responsive Web Design</h3>
-        <p>Responsive web design is a web design approach that allows websites and pages to display on all devices and
-          screen sizes by automatically adapting to the screen, whether it's a desktop, laptop, tablet, or smartphone.
-        </p>
-      </div>
+      <a href="#work" class="btn">My Work</a>
+    </section>
 
-      <div class="service">
-        <h3>SEO</h3>
-        <p>Improve your rankings in Google with Managed SEO. Optimise your website by conducting an SEO website audit,
-          researching keywords which are important to your market sector and bring in targeted search volume.
-        </p>
-      </div>
-    </div>
+    <!-- About Me -->
 
-    <a href="#work" class="btn">My Work</a>
-  </section>
-
-  <!-- About Me -->
-
-  <section class="about-me" id="about">
-    <h2 class="section-title section-title-about">Who I am</h2>
-    <p class="section-subtitle section-subtitle-about">Front-End Developer based out of Auckland, NZ</p>
-
-    <div class="about-me-body">
-      <h3>Former marketer, self-taught software developer, passionate about technology and web development.</h3>
-      <p>I started my career as a marketer after graduating from business university but found myself spending all of my
-        free time involved with technology, building computers, solving problems, spending hours in front of the
-        computer and being a reference to my friends when it comes to technology. It didn't take long to realize a
-        career change was in order, although it took some time to actually make the move.
+    <section class="about-me" id="about">
+      <h2 class="section-title section-title-about">Who I am</h2>
+      <p class="section-subtitle section-subtitle-about">
+        Front-End Developer based out of Auckland, NZ
       </p>
-      <p>Over the years, I have had the privilege of working for big companies such as Walt Disney and Warner Bros
-        where, not only I was able to develope important skills, such as communication and leadership, but also
-        understand the the intricacies of a large corporation, building relationship with clients, helping them build
-        out their brand and become successful. </p>
-      <p>I began my journey into programing and web development in 2019, when I decided to dedicate full time to my
-        studies and pursue my dreams and do what I am truly passionate about which is web development.</p>
-    </div>
 
-    <img src="./img/Myself2.jpg" alt="Second image of Rodrigo" class="about-me-img">
-  </section>
+      <div class="about-me-body">
+        <h3>
+          Former marketer, self-taught software developer, passionate about
+          technology and web development.
+        </h3>
+        <p>
+          I started my career as a marketer after graduating from business
+          university but found myself spending all of my free time involved with
+          technology, building computers, solving problems, spending hours in
+          front of the computer and being a reference to my friends when it
+          comes to technology. It didn't take long to realize a career change
+          was in order, although it took some time to actually make the move.
+        </p>
+        <p>
+          Over the years, I have had the privilege of working for big companies
+          such as Walt Disney and Warner Bros where, not only I was able to
+          develope important skills, such as communication and leadership, but
+          also understand the the intricacies of a large corporation, building
+          relationship with clients, helping them build out their brand and
+          become successful.
+        </p>
+        <p>
+          I began my journey into programing and web development in 2019, when I
+          decided to dedicate full time to my studies and pursue my dreams and
+          do what I am truly passionate about which is web development.
+        </p>
+      </div>
 
-  <!-- Coming soon -- My Work  -->
+      <img
+        src="./img/Myself2.jpg"
+        alt="Second image of Rodrigo"
+        class="about-me-img"
+      />
+    </section>
 
-  <section class="my-work" id="work">
-    <h2 class="section-title section-title-work">My Work</h2>
-    <p class="section-subtitle section-subtitle-work">A selection of my range of work</p>
-    <h2>Coming soon!</h2>
+    <!-- Coming soon -- My Work  -->
 
-    <!-- <div class="portfolio">
+    <section class="my-work" id="work">
+      <h2 class="section-title section-title-work">My Work</h2>
+      <p class="section-subtitle section-subtitle-work">
+        A selection of my range of work
+      </p>
+      <h2>Coming soon!</h2>
+
+      <!-- <div class="portfolio">
       Portfolio item 01
       <a href="#" class="portfolio-item">
         <img src="./img/portfolio-01.jpg" alt="" class="portfolio-img">
@@ -147,37 +197,53 @@
         <img src="./img/portfolio-10.jpg" alt="" class="portfolio-img">
       </a>
     </div> -->
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <a href="mailto:rod_novaes@hotmail.com" class="footer-link">rod_novaes@hotmail.com</a>
-    <ul class="social-list">
-      <li class="social-list-item">
-        <a class="social-list-link" href="https://github.com/RodrigoN01" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      <li class="social-list-item">
-        <a class="social-list-link" href="https://www.linkedin.com/in/rodnovaes/" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-      <li class="social-list-item">
-        <a class="social-list-link" href="https://codepen.io/Rodrigon01" target="_blank">
-          <i class="fab fa-codepen"></i>
-        </a>
-      </li>
-      <li class="social-list-item">
-        <a class="social-list-link" href="https://twitter.com/Rod_Novaes" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    </ul>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:rod_novaes@hotmail.com" class="footer-link"
+        >rod_novaes@hotmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a
+            class="social-list-link"
+            href="https://github.com/RodrigoN01"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a
+            class="social-list-link"
+            href="https://www.linkedin.com/in/rodnovaes/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a
+            class="social-list-link"
+            href="https://codepen.io/Rodrigon01"
+            target="_blank"
+          >
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a
+            class="social-list-link"
+            href="https://twitter.com/Rod_Novaes"
+            target="_blank"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
 
-
-  <script src="./js/app.js"></script>
-</body>
-
+    <script src="./js/app.js"></script>
+  </body>
 </html>
